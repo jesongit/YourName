@@ -9,7 +9,7 @@
                 android:bottomLeftRadius="0dp"/>
         </shape>
     </item>
-    <item>
+    <item android:state_checked="false">
         <shape>
             <solid android:color="#FFFFFF"/>
             <corners

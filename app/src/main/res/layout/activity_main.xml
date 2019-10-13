@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/colorSkyBlue">
     <RelativeLayout
+        android:id="@+id/mRlHead"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:paddingTop="25dp"
@@ -16,6 +17,7 @@
             android:layout_height="30dp"
             android:background="@drawable/ic_setting"/>
         <RadioGroup
+            android:id="@+id/mRg"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_centerInParent="true"
@@ -23,28 +25,29 @@
             android:orientation="horizontal"
             android:background="@drawable/sty_radio_group">
             <RadioButton
+                android:id="@+id/mRbt1"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:background="@drawable/sty_radio_left"
                 android:button="@null"
                 android:text="浏览"
                 android:gravity="center"
-                android:textColor="@color/colorBlack"/>
+                android:textColor="@color/colorBlack"
+                android:checked="true"/>
             <RadioButton
+                android:id="@+id/mRbt2"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:background="@drawable/sty_radio_button"
                 android:button="@null"
                 android:text="浏览"
                 android:gravity="center"
                 android:textColor="@color/colorBlack"/>
             <RadioButton
+                android:id="@+id/mRbt3"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/sty_radio_button"
+                android:background="@drawable/sty_radio_right"
                 android:button="@null"
                 android:text="浏览"
                 android:gravity="center"
@@ -55,5 +58,25 @@
             android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:background="@drawable/ic_love"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRvMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mRlHead"
+        android:background="@color/colorSkyBlue">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/mBtnAdd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_add"/>
     </RelativeLayout>
 </RelativeLayout>

@@ -12,7 +12,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/ic_icon"/>
+        android:src="@drawable/ic_icon"/>
     <TextView
         android:id="@+id/mTexAppName"
         android:layout_width="wrap_content"
